@@ -6,7 +6,7 @@
 /*   By: khoukouj <khoukouj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 11:24:31 by khoukouj          #+#    #+#             */
-/*   Updated: 2024/12/19 17:08:40 by khoukouj         ###   ########.fr       */
+/*   Updated: 2024/12/23 14:44:20 by khoukouj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,9 @@ int	main(int ac, char *av[])
 
 	a = NULL;
 	b = NULL;
-	if (ac == 1 || (ac == 2 && av[1][0] == '\0'))
+	if (ac == 1)
+		return (0);
+	if (ac == 2 && av[1][0] == '\0')
 		(write(2, "Error\n", 6), exit(1));
 	ft_stack_init(&a, av, 0);
 	if (stack_not_sorted(&a))
