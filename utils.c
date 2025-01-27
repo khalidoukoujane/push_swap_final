@@ -48,6 +48,8 @@ int	stack_not_sorted(t_stack_node **stack)
 {
 	t_stack_node	*curr;
 
+	if (!stack)
+		return (0);
 	curr = (*stack);
 	while (curr)
 	{
