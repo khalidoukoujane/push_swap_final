@@ -41,9 +41,9 @@ void	ft_lstadd_back(t_stack_node **stack, t_stack_node *new)
 	t_stack_node	*tmp;
 	t_stack_node	*last;
 
-	tmp = *stack;
 	if (!stack || !new)
 		return ;
+	tmp = *stack;
 	while (tmp)
 	{
 		if (tmp->value > new->value)
