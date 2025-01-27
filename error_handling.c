@@ -30,6 +30,8 @@ void	free_stack(t_stack_node **stack)
 	t_stack_node	*curr;
 	t_stack_node	*tmp;
 
+	if (!stack)
+		return ;
 	curr = *stack;
 	while (curr)
 	{
